@@ -1,0 +1,26 @@
+# CODEOWNERS file for RepoGo
+# 
+# These owners will be the default owners for everything in the repo.
+# Unless a later match takes precedence, they will be requested for review when someone opens a pull request.
+
+# Core application entry point - requires owner approval
+/cmd/                           @AndersonTsaiTW
+
+# Main application logic - requires owner approval  
+/cmd/repogo/main.go             @AndersonTsaiTW
+
+# Configuration and build files
+/makefile                       @AndersonTsaiTW
+/go.mod                         @AndersonTsaiTW
+/go.sum                         @AndersonTsaiTW
+
+# GitHub workflows and templates
+/.github/                       @AndersonTsaiTW
+
+# Documentation
+/README.md                      @AndersonTsaiTW
+/CONTRIBUTING.md                @AndersonTsaiTW
+
+# Internal packages - contributors can propose changes
+# but owner has final say
+/internal/                      @AndersonTsaiTW
