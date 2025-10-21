@@ -1,11 +1,11 @@
 # ===== repogo Makefile =====
 APP := repogo
-PKG := .
-# Use git tag or manual VERSION, will be injected into main.Version
+PKG := ./cmd/repogo
+# Use git tag or manual VERSION, will be injected into config.Version
 VERSION ?= $(shell git describe --tags --always --dirty 2>/dev/null || echo 0.1.0)
 
 # Go build flags
-LDFLAGS := -s -w -X 'main.Version=$(VERSION)'
+LDFLAGS := -s -w -X 'github.com/AndersonTsaiTW/RepoGo/internal/config.Version=$(VERSION)'
 
 # Target platforms (can be customized)
 TARGETS := \
