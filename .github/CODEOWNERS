@@ -1,0 +1,7 @@
+# CODEOWNERS file for RepoGo
+# 
+# These owners will be the default owners for everything in the repo.
+# Unless a later match takes precedence, they will be requested for review when someone opens a pull request.
+
+# Main application logic - requires owner approval  
+/cmd/repogo/main.go             @AndersonTsaiTW
